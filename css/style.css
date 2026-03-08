@@ -78,7 +78,7 @@ img {
 }
 
 .home-banner {
-  padding: 0 100px 100px;
+  padding: 0 20px 20px;
 }
 
 .home-banner img {
@@ -99,7 +99,9 @@ img {
   padding: 14px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .card:hover {
