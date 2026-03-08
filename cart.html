@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | MotoZ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" class="logo" alt="MotoZ Logo">
+      <span class="site-title">MotoZ</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Your Cart</h2>
+
+    <div id="emptyState" class="empty-state" style="display:none;">
+      Your cart is empty.
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Color</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+    </div>
+
+    <div id="cartSummary" class="cart-summary"></div>
+
+    <div class="cart-summary" style="margin-top: 16px;">
+      <h3>Customer Details</h3>
+      <div class="form-row">
+        <label for="customerName">Name</label>
+        <input type="text" id="customerName" placeholder="Your name">
+      </div>
+      <div class="form-row">
+        <label for="customerPhone">Phone Number</label>
+        <input type="text" id="customerPhone" placeholder="07X XXX XXXX">
+      </div>
+      <div class="form-row">
+        <label for="customerCity">Nearest City</label>
+        <input type="text" id="customerCity" placeholder="Colombo">
+      </div>
+      <div class="form-row">
+        <label for="customerAddress">Address</label>
+        <textarea id="customerAddress" rows="3" placeholder="Full delivery address"></textarea>
+      </div>
+    </div>
+
+    <div style="margin-top:16px; max-width: 320px;">
+      <button class="btn whatsapp" id="sendWhatsapp">Send Order via WhatsApp</button>
+    </div>
+  </main>
+
+  <script src="js/cart.js"></script>
+  <script src="js/cartPage.js"></script>
+  <script src="js/whatsappOrder.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>

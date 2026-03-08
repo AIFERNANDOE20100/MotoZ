@@ -1,69 +1,69 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SupermotoLK</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoZ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <img src="logo.png" class="logo" alt="MotoZ Logo" />
+        <span class="site-title">MotoZ</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="https://wa.me/94764474693" target="_blank">Contact</a>
+      </nav>
+    </header>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <section class="home-banner">
+      <img src="images/Main.png" alt="MotoZ Banner" />
+    </section>
 
-<body>
+    <main class="page">
+      <h2>Featured Products</h2>
+      <div class="products" id="productContainer"></div>
+    </main>
 
-  <header class="site-header">
-  <img src="logo.png" class="logo" alt="SupermotoLK Logo">
-  <span class="site-title">SupermotoLK</span>
-</header>
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>MotoZ</h3>
+        <p>Colombo, Sri Lanka</p>
+        <p>Phone: +94 76 447 4693</p>
+        <p>Phone: +94 75 150 1176</p>
+      </div>
 
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="https://wa.me/94764474693" target="_blank">Contact</a>
+      </div>
 
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search items..." onkeyup="filterProducts()" />
-  </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/share/17GXfVx95m/" target="_blank"
+          >Facebook</a
+        >
+        <a
+          href="https://www.tiktok.com/@motoz070?_r=1&_t=ZS-94UBdsVhnTp"
+          target="_blank"
+          >TikTok</a
+        >
+      </div>
 
-  <div class="category-filter">
-    <select id="categorySelect" onchange="filterProducts()">
-      <option value="all">All Categories</option>
-    </select>
-  </div>
+      <div class="footer-section footer-banner">
+        <img src="images/Banner.jpg" alt="MotoZ Banner" />
+      </div>
+    </footer>
 
-  <div class="products" id="productContainer"></div>
+    <div class="footer-bottom">(c) 2025 MotoZ - All Rights Reserved.</div>
 
-  <a class="whatsapp-btn" href="https://wa.me/94764474693" target="_blank">Contant us</a>
-
-  <script src="script.js"></script>
-  <!-- Image Preview Modal -->
-<div id="imageModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img id="modalImage">
-</div>
-<footer class="footer">
-  <div class="footer-section">
-    <h3>SupermotoLK</h3>
-    <p>Colombo, Sri Lanka</p>
-    <p>📞 +94 76 447 4693</p>
-    <p>📞 +94 75 150 1176</p>
-    <!-- <p>📧 supermotolk@gmail.com</p> -->
-  </div>
-
-  <div class="footer-section">
-    <h4>Quick Links</h4>
-    <a href="#">Home</a>
-    <a href="#">Categories</a>
-    <a href="#">New Arrivals</a>
-    <a href="#">Contact Us</a>
-  </div>
-
-  <div class="footer-section">
-    <h4>Follow Us</h4>
-    <a href="https://www.facebook.com/share/17GXfVx95m/" target="_blank">Facebook</a><br>
-    <!-- <a href="https://instagram.com" target="_blank">Instagram</a><br> -->
-    <a href="https://www.tiktok.com/@supermoto_lk?_r=1&_t=ZS-924dH5mBnIi" target="_blank">TikTok</a>
-  </div>
-</footer>
-
-<div class="footer-bottom">
-  © 2025 SupermotoLK — All Rights Reserved.
-</div>
-
-</body>
+    <script src="js/products.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
 </html>
