@@ -481,3 +481,13 @@ textarea {
     height: 180px;
   }
 }
+
+@media (max-width: 700px) {
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .card-actions .btn {
+    width: 100%;
+  }
+}
