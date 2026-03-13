@@ -14,7 +14,7 @@
       </div>
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
+        <a href="cart.html" class="cart-link">Cart <span class="cart-count" id="cartCount">0</span></a>
         <a href="https://wa.me/94764474693" target="_blank">Contact</a>
       </nav>
     </header>
@@ -25,6 +25,12 @@
 
     <main class="page">
       <h2>Featured Products</h2>
+      <div class="catalog-controls">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search products..." />
+        </div>
+        <div class="category-tabs" id="categoryTabs"></div>
+      </div>
       <div class="products" id="productContainer"></div>
     </main>
 
@@ -39,7 +45,7 @@
       <div class="footer-section">
         <h4>Quick Links</h4>
         <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
+        <a href="cart.html" class="cart-link">Cart <span class="cart-count" id="cartCount">0</span></a>
         <a href="https://wa.me/94764474693" target="_blank">Contact</a>
       </div>
 
@@ -63,7 +69,13 @@
     <div class="footer-bottom">(c) 2025 MotoZ - All Rights Reserved.</div>
 
     <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/catalog.js"></script>
     <script src="js/lightbox.js"></script>
   </body>
 </html>
+
+
+
+
+

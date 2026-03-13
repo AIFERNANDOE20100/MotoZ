@@ -12,6 +12,7 @@ function getCart() {
 
 function saveCart(cart) {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  updateCartBadge();
 }
 
 function addToCart(item) {
@@ -63,3 +64,13 @@ function cartTotals(cart) {
   );
   return { totalItems, totalPrice };
 }
+
+function updateCartBadge() {
+  const badge = document.getElementById("cartCount");
+  if (!badge) return;
+  const { totalItems } = cartTotals(getCart());
+  badge.textContent = String(totalItems);
+  badge.classList.toggle("is-hidden", totalItems === 0);
+}
+
+document.addEventListener("DOMContentLoaded", updateCartBadge);
