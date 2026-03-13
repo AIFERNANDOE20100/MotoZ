@@ -25,7 +25,7 @@ function renderProducts(container, products) {
         <a class="btn" href="product.html?id=${product.id}">View Product</a>
         <button class="btn secondary" data-add-to-cart="${product.id}" ${
           product.in_stock ? "" : "disabled"
-        }>Add to Cart</button>
+        }><span class="cart-icon">🛒</span> Add to Cart</button>
       </div>
     `;
 
@@ -128,3 +128,4 @@ async function renderCatalog() {
 }
 
 document.addEventListener("DOMContentLoaded", renderCatalog);
+

@@ -538,3 +538,8 @@ textarea {
     white-space: nowrap;
   }
 }
+
+.cart-icon {
+  font-size: 14px;
+  line-height: 1;
+}
